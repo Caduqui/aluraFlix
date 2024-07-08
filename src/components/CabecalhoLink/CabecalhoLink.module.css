@@ -1,0 +1,17 @@
+.link {
+    display: flex;
+    border: 2px solid #F5F5F5;
+    width: 180px;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.linkDestacado {
+    background-color: var(--preto90);
+    border-color: #2271D1;
+    color: #2271D1;
+}

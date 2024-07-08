@@ -1,0 +1,77 @@
+.container {
+    background-color: #03122F;
+    position: fixed;
+    width: 974px;
+    height: 740px;
+    top: 114px;
+    left: 233px;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #68D1FF;
+    border-radius: 15px;
+}
+
+.container div h1 {
+    margin-top: 0;
+}
+
+.container img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 430px;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.container h1 {
+    color: #2271D1;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.compartimento {
+    display: flex;
+    flex-direction: column;
+}
+
+.compartimento label {
+    color: var(--branco);
+}
+
+.compartimento input {
+    width: 470px;
+    height: 34px;
+    background-color: transparent;
+    border: 3px solid #2271D1;
+    border-radius: 10px;
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0 0 0;
+}
+
+.botoes button {
+    border: 2px solid #F5F5F5;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 160px;
+    height: 54px;
+    cursor: pointer;
+}
+
+.botoes button p {
+    color: white;
+}

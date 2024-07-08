@@ -1,10 +1,21 @@
+:root {
+  --fonteSans: "Source Sans 3", sans-serif;
+  --fonteRoboto: "Roboto", sans-serif;
+  --cinzaEscuro: #262626;
+  --branco: #F5F5F5;
+  --preto90: rgba(0, 0, 0, 0.9);
+  --cor-academia: #6BD1FF;
+  --cor-anime: #00C86F;
+  --cor-jogos: #FFBA05;
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--fonteRoboto);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191919;
 }
 
 code {

@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    background-color: var(--preto90);
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img {
+    width: 168.45px;
+    height: 40px;
+}
+
+
+.navegacao {
+    display: flex;
+    gap: 25px;
+}
+

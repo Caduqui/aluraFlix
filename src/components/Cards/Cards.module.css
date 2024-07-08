@@ -1,0 +1,33 @@
+.card {
+    width: 432px;
+    height: 306px;
+    background-color: var(--preto90);
+    margin: 1% 1%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descricaoParagrafo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.descricaoParagrafo p {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.imagem {
+    color: white;
+    cursor: pointer;
+}

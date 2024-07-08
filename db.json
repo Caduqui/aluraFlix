@@ -1,0 +1,67 @@
+{
+    "videos": [
+        {
+            "id": 1,
+            "titulo": "SERJÃO VOLTOU E SURPREENDEU O BALESTRIN COM O SEU PESO",
+            "capa": "https://i.ytimg.com/vi/KPlVwUSi7jY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8TwN-Mp-Dl4ScQecb-MrRmYrXDQ",
+            "link": "https://youtu.be/KPlVwUSi7jY?si=qmBpRGN-rBbIalHH",
+            "categoria": "ACADEMIA"
+        },
+        {
+            "id": 2,
+            "titulo": "ELES TOMARAM CAFÉ DA MANHÃ NO HOTEL 5 ESTRELAS COM O BALESTRIN",
+            "capa": "https://i.ytimg.com/vi/dDfZP10yGwA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7Wc2VbeaH4z6sqV6J6Dg8k9mjnA",
+            "link": "https://youtu.be/dDfZP10yGwA?si=133QWSdKBUC169oE",
+            "categoria": "ACADEMIA"
+        },
+        {
+            "id": 3,
+            "titulo": "THOR O GIGANTE ATLETA ISLANDÊS QUE APAVOROU A TODOS COM SUA FORÇA – IRONCAST CORTES",
+            "capa": "https://i.ytimg.com/vi/M8Nxd-5y8Ys/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCDXvV7BGOjLi91IFe2D6ejwH0rjg",
+            "link": "https://youtu.be/M8Nxd-5y8Ys?si=rdcYDgLDpKqVov26",
+            "categoria": "ACADEMIA"
+        },
+        {
+            "id": 4,
+            "titulo": "Aqui deixo para vocês um Jin Mori dando aulas para os valentões 😎 | Anime: The God of High School",
+            "capa": "https://i.ytimg.com/vi/Nm5HXBDHpAg/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBHdX18FX6Vrvsr1VslHAiPJDK6YQ",
+            "link": "https://youtu.be/Nm5HXBDHpAg?si=LRRfFOnXwIXxga64",
+            "categoria": "ANIME"
+        },
+        {
+            "id": 5,
+            "titulo": "Demon Slayer: Kimetsu no Yaiba Hashira Training Arc | TRAILER OFICIAL",
+            "capa": "https://i.ytimg.com/vi/k9ex2xuoQZs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZ4xoroOFX2ZjqCdDdcwKU_jUBTQ",
+            "link": "https://youtu.be/k9ex2xuoQZs?si=OnX9q9j3BS7Xy1Dw",
+            "categoria": "ANIME"
+        },
+        {
+            "id": 6,
+            "titulo": "Agora vamos ver quem tem a varinha mais fedida | MASHLE: MAGIA E MÚSCULOS",
+            "capa": "https://i.ytimg.com/vi/KOZQxMcFEDc/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBhlSl4sso1960Fcpm8VgH1hypGUw",
+            "link": "https://youtu.be/KOZQxMcFEDc?si=qwkJFbKkZQFczj73",
+            "categoria": "ANIME"
+        },
+        {
+            "id": 7,
+            "titulo": "ELDEN RING Shadow of the Erdtree | Official Gameplay Reveal Trailer",
+            "capa": "https://i.ytimg.com/vi/qLZenOn7WUo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDdIY15EYzp3K9xKEQka38sMc8Y6Q",
+            "link": "https://youtu.be/qLZenOn7WUo?si=W6TDoQxEUm9Tn3Kw",
+            "categoria": "JOGOS"
+        },
+        {
+            "id": 8,
+            "titulo": "Awaken | Season 2019 Cinematic - League of Legends (ft. Valerie Broussard)",
+            "capa": "https://i.ytimg.com/vi/zF5Ddo9JdpY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzZs856YrFKAe3MNVnIStxuGC1NQ",
+            "link": "https://youtu.be/zF5Ddo9JdpY?si=Bcq4oRzjxfBREnZM",
+            "categoria": "JOGOS"
+        },
+        {
+            "id": 9,
+            "titulo": "Grand Theft Auto VI Trailer 1",
+            "capa": "https://i.ytimg.com/vi/QdBZY2fkU-0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBsUIlbe3vsIz8Q1dMp4Jd7EzlHWg",
+            "link": "https://youtu.be/QdBZY2fkU-0?si=EA5BRlsH0GI5ThLJ",
+            "categoria": "JOGOS"
+        }
+    ]
+}

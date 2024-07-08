@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    height: 500px;
+    position: relative;
+   
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.texto {
+    flex: 1;
+    color: var(--branco);   
+    z-index: 2;
+}
+
+.texto h2 {
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.texto p {
+    width: 70%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.video {
+    z-index: 2;
+}

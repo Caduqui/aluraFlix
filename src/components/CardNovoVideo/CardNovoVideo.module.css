@@ -1,0 +1,73 @@
+.container h2 {
+    color: var(--branco);
+    border-top: 3px solid var(--cinzaEscuro);
+    border-bottom: 3px solid var(--cinzaEscuro);
+    padding: 0.7% 2%;
+}
+
+.textos {
+    padding: 0 2%;
+}
+
+.formularioContainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formulario input {
+    padding: 0 1%;
+}
+
+.formulario select {
+    background-color: transparent;
+    border: 3px solid var(--cinzaEscuro);
+    width: 510px;
+    height: 58px;
+    border-radius: 10px;
+    color: gray;
+    padding: 0 1%;
+}
+
+.formulario select option {
+    border-color: var(--cinzaEscuro);
+    background-color: var(--cinzaEscuro);
+    color: white;
+}
+
+.container {
+    padding: 2%;
+}
+
+.container input {
+    background-color: transparent;
+    border: 3px solid var(--cinzaEscuro);
+    width: 490px;
+    height: 54px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container h3 {
+    color: var(--branco);
+}
+
+.botoes {
+    display: flex;
+    gap: 30px;
+    padding: 1% 0 0 2%;
+}
+
+.botoes button {
+    border: 2px solid #F5F5F5;
+    width: 180px;
+    height: 54px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botoes button:hover {
+    border-color: #2271D1;
+}

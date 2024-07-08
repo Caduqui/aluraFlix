@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.categoria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 432px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: #6BD1FF;
+    margin: 1% 1%;
+}
+
+.categoria h1 {
+    color: var(--branco);
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+}
