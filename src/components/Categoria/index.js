@@ -33,7 +33,7 @@ function Categoria({ Categoria }) {
     };
 
     return (
-        <div >
+        <div className={styles.borda}>
             <div className={styles.categoria} style={{ backgroundColor: categoriaCor(Categoria) }}>
                 <h1>{Categoria}</h1>
             </div>

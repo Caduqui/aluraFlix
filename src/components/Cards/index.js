@@ -30,16 +30,6 @@ function Cards({ id, capa, categoria, removerCard, video, setVideos }) {
         }
     };
 
-    const aoDeletar = (id) => {
-        try {
-            conectaApi.deletaCard(id);
-            console.log('Card excluído com sucesso');
-            removerCard(id);
-        } catch (error) {
-            console.error('Erro ao fazer a requisição DELETE', error);
-        }
-    }
-
     const handleVideoAtualizado = (videoAtualizado) => {
         setVideos((prevVideos) =>
             prevVideos.map((v) => (v.id === videoAtualizado.id ? videoAtualizado : v))
@@ -51,7 +41,7 @@ function Cards({ id, capa, categoria, removerCard, video, setVideos }) {
             <div className={styles.card} style={{ border: `4px solid ${bordaCor(categoria)}` }}>
                 <img src={capa} />
                 <div className={styles.descricao} style={{ borderWidth: '5px 0px 0px 0px', borderStyle: 'solid', borderColor: `${bordaCor(categoria)}` }}>
-                    <div className={styles.descricaoParagrafo} onClick={() => aoDeletar(id)}>
+                    <div className={styles.descricaoParagrafo} onClick={() => removerCard(id)}>
                         <TbTrashX className={styles.imagem} />
                         <p>DELETAR</p>
                     </div>

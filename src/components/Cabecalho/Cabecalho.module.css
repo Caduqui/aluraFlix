@@ -11,9 +11,19 @@
     height: 40px;
 }
 
-
 .navegacao {
     display: flex;
     gap: 25px;
 }
 
+/* CELULAR */
+
+@media (max-width:430px) {
+    .container {
+        justify-content: center;
+    }
+
+    .container img {
+        display: none;
+    }
+}

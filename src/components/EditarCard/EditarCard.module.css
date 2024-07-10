@@ -70,8 +70,29 @@
     width: 160px;
     height: 54px;
     cursor: pointer;
-}
-
-.botoes button p {
     color: white;
 }
+
+.botoes button:hover {
+    background-color: var(--preto90);
+    border-color: #2271D1;
+    color: #2271D1;
+}
+
+/* TABLET */
+
+@media (max-width:1024px) {
+    .container {
+        left: 55px;
+        top: 400px;
+        height: 800px;
+        width: 900px;
+    }
+
+    .container img {
+        bottom: 90px;
+        left: 400px;
+    }
+}
+
+/* CELULAR */

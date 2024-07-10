@@ -13,8 +13,6 @@ function Cabecalho() {
                 <MenuLink to="/novoVideo">
                     NOVO VÍDEO
                 </MenuLink>
-
-
             </nav>
         </div>
     )

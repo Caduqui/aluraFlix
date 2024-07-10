@@ -24,6 +24,17 @@
     z-index: 2;
 }
 
+.texto h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 70px;
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 15px;
+}
+
 .texto h2 {
     font-size: 46px;
     font-weight: 400;
@@ -39,4 +50,30 @@
 
 .video {
     z-index: 2;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+    .texto h2 {
+        width: 100%;
+        font-size: 36px;
+    }
+
+    .texto p {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .video {
+        width: 400px;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 430px) {
+    .container {
+        display: none;
+    }
 }

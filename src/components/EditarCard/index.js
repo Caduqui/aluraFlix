@@ -70,8 +70,8 @@ function EditarCard({ isOpen, onClose, video, setVideo }) {
                         <input value={link} onChange={(e) => setLink(e.target.value)}></input>
                     </div>
                     <div className={styles.botoes}>
-                        <button onClick={handleSalvar}><p>SALVAR</p></button>
-                        <button onClick={handleLimpar}><p>LIMPAR</p></button>
+                        <button onClick={handleSalvar}>SALVAR</button>
+                        <button onClick={handleLimpar}>LIMPAR</button>
                     </div>
                 </div>
             </div>
