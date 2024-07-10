@@ -96,3 +96,24 @@
 }
 
 /* CELULAR */
+
+@media (max-width: 430px) {
+    .container {
+        left: 5px;
+        width: 410px;
+    }
+
+    .container h1 {
+        font-size: 50px;
+    }
+
+    .compartimento input {
+        width: 360px;
+    }
+
+    .container img {
+        bottom: 100px;
+        left: 180px;
+    }
+
+}

@@ -3,6 +3,7 @@ import Cabecalho from "../../components/Cabecalho";
 import CardNovoVideo from "../../components/CardNovoVideo";
 import Rodape from "../../components/Rodape";
 import TituloNovoVideo from "../../components/TituloNovoVideo";
+import styles from './NovoVideo.module.css';
 
 function NovoVideo() {
     const [videos, setVideos] = useState([]);
@@ -13,12 +14,12 @@ function NovoVideo() {
             .then(dados => { setVideos(dados) })
     }, []);
     return (
-        <>
+        <div className={styles.container}>
             <Cabecalho />
             <TituloNovoVideo />
             <CardNovoVideo setVideos={setVideos} />
             <Rodape />
-        </>
+        </div>
 
     )
 }
