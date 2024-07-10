@@ -1,18 +1,24 @@
 import styles from './Categoria.module.css';
 import Cards from '../Cards';
 import { useEffect, useState } from 'react';
+import { conectaApi } from '../conectaApi';
 
 function Categoria({ Categoria }) {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/Caduqui/aluraFlix-api/videos')
+        fetch('http://localhost:3000/videos')
             .then(resposta => resposta.json())
             .then(dados => { setVideos(dados) })
     }, []);
 
-    const removerCard = (id) => {
+    const removerCard = async (id) => {
+       try {
+        await conectaApi.deletaCard(id);
         setVideos(videos.filter(card => card.id !== id));
+       } catch (error) {
+        console.error('Erro ao remover o card:', error);
+       }
     };
 
     const categoriaVideos = videos.filter(video => video.categoria === Categoria);

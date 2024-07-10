@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './CardNovoVideo.module.css';
 import { useNavigate } from 'react-router-dom';
+import { conectaApi } from '../conectaApi';
 
 function CardNovoVideo({ setVideos }) {
     const [titulo, setTitulo] = useState("");
@@ -13,30 +14,13 @@ function CardNovoVideo({ setVideos }) {
         evento.preventDefault();
 
         try {
-            const resposta = await fetch('https://my-json-server.typicode.com/Caduqui/aluraFlix-api/videos', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    titulo,
-                    categoria,
-                    capa,
-                    link,
-                }),
-            });
-
-            if (resposta.ok) {
-                const novoVideo = await resposta.json();
-                setVideos((prevVideos) => [...prevVideos, novoVideo]);
-                setTitulo('');
-                setCategoria('');
-                setCapa('');
-                setLink('');
-                navegacao('/');
-            } else {
-                console.error('Erro ao criar o novo vídeo');
-            }
+            const novoVideo = await conectaApi.criaCard(titulo, capa, link, categoria);
+            setVideos((prevVideos) => [...prevVideos, novoVideo]);
+            setTitulo('');
+            setCategoria('');
+            setCapa('');
+            setLink('');
+            navegacao('/');
         } catch (error) {
             console.error('Erro ao fazer a requsição POST', error);
         }

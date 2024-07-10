@@ -3,6 +3,7 @@ import { CiEdit } from "react-icons/ci";
 import { TbTrashX } from "react-icons/tb";
 import EditarCard from '../EditarCard';
 import { useState } from 'react';
+import { conectaApi } from '../conectaApi';
 
 function Cards({ id, capa, categoria, removerCard, video, setVideos }) {
 
@@ -30,25 +31,18 @@ function Cards({ id, capa, categoria, removerCard, video, setVideos }) {
     };
 
     const aoDeletar = (id) => {
-        fetch(`https://my-json-server.typicode.com/Caduqui/aluraFlix-api/videos/${id}`, {
-            method: 'DELETE',
-        })
-            .then(resposta => {
-                if (resposta.ok) {
-                    console.log('Card excluído com sucesso');
-                    removerCard(id)
-                } else {
-                    console.log('Ocorreu um erro ao excluir o card');
-                }
-            })
-            .catch(error => {
-                console.error('Erro ao fazer a requisição DELETE', error);
-            })
+        try {
+            conectaApi.deletaCard(id);
+            console.log('Card excluído com sucesso');
+            removerCard(id);
+        } catch (error) {
+            console.error('Erro ao fazer a requisição DELETE', error);
+        }
     }
 
     const handleVideoAtualizado = (videoAtualizado) => {
-        setVideos ((prevVideos) => 
-        prevVideos.map ((v) => (v.id === videoAtualizado.id ? videoAtualizado : v))
+        setVideos((prevVideos) =>
+            prevVideos.map((v) => (v.id === videoAtualizado.id ? videoAtualizado : v))
         )
     }
 
@@ -67,7 +61,7 @@ function Cards({ id, capa, categoria, removerCard, video, setVideos }) {
                     </div>
                 </div>
             </div>
-            <EditarCard isOpen={isModalOpen} onClose={fecharModal} video={video} setVideo={handleVideoAtualizado}/>
+            <EditarCard isOpen={isModalOpen} onClose={fecharModal} video={video} setVideo={handleVideoAtualizado} />
         </>
 
     )

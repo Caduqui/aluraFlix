@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './EditarCard.module.css';
 import icone from './iconeFechar.png';
+import { conectaApi } from '../conectaApi';
 
 
 function EditarCard({ isOpen, onClose, video, setVideo }) {
@@ -21,27 +22,16 @@ function EditarCard({ isOpen, onClose, video, setVideo }) {
 
     const handleSalvar = async () => {
         try {
-            const resposta = await fetch(`https://my-json-server.typicode.com/Caduqui/aluraFlix-api/videos/${video.id}`, {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    titulo,
-                    categoria,
-                    capa,
-                    link,
-                }),
-            });
-
-            if (resposta.ok) {
-                const videoAtualizado = await resposta.json();
-                setVideo(videoAtualizado);
-                onClose();
-            } else {
-                console.error('Erro ao atualizar o vídeo');
-            }
-        } catch (error) {
+            const videoAtualizado = await conectaApi.atualizaCard(
+                video.id,
+                titulo,
+                capa,
+                link,
+                categoria
+            );
+            setVideo(videoAtualizado);
+            onClose();
+            } catch (error) {
             console.error('Erro ao fazer a requisição PUT', error);
         }
     };

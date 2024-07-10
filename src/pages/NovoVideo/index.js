@@ -8,7 +8,7 @@ function NovoVideo() {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/Caduqui/aluraFlix-api/videos')
+        fetch('http://localhost:3000/videos')
             .then(resposta => resposta.json())
             .then(dados => { setVideos(dados) })
     }, []);
