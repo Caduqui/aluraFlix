@@ -1,15 +1,18 @@
 import styles from './Categoria.module.css';
 import Cards from '../Cards';
 import { useEffect, useState } from 'react';
-import { conectaApi } from '../conectaApi';
+import { getVideos, conectaApi } from '../conectaApi';
 
 function Categoria({ Categoria }) {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/videos')
-            .then(resposta => resposta.json())
-            .then(dados => { setVideos(dados) })
+        getVideos()
+            .then(dados => { setVideos(dados);             
+            })
+            .catch(error => {
+                console.error("Erro ao buscar videos:", error);
+            })
     }, []);
 
     const removerCard = async (id) => {

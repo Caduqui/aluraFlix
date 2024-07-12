@@ -3,7 +3,6 @@ import { CiEdit } from "react-icons/ci";
 import { TbTrashX } from "react-icons/tb";
 import EditarCard from '../EditarCard';
 import { useState } from 'react';
-import { conectaApi } from '../conectaApi';
 
 function Cards({ id, capa, categoria, removerCard, video, setVideos }) {
 
